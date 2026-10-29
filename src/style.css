@@ -2614,6 +2614,62 @@ width: max-content;
   }
 }
 
+/* Project modal links */
+
+.modal-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.modal-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 42px;
+  padding: 0 18px;
+
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: white;
+
+  font-family: 'Orbitron', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.modal-links a svg {
+  width: 14px;
+  height: 14px;
+}
+
+.modal-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 0 var(--pink);
+}
+
+/* Make the Live Site button visually different */
+.modal-links a:nth-child(2) {
+  background: white;
+  color: var(--ink);
+}
+
+.modal-links a:nth-child(2):hover {
+  background: var(--lime);
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   *,

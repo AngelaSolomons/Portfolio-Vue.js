@@ -16,7 +16,7 @@ export const projects = [
     tags: ["Vue 3", "Flask", "Three.js"],
     accent: "pink",
     code: "LN",
-    liveDemo: "https://lnkd.in/dbQggjs9",
+    live: "https://lnkd.in/dbQggjs9",
     github: "https://lnkd.in/d3theYea",
     problem:
       "News content can be scattered across different sources, making it difficult to collect, organise, and explore in one place.",
@@ -33,6 +33,8 @@ export const projects = [
     tags: ["Node.js", "Express", "MySQL"],
     accent: "blue",
     code: "MT",
+    live: "https://hr-management-ujr8.onrender.com",
+    github: "https://github.com/MattLCA/Module-2-Core-Project.git",
     problem:
       "Managing employee information and HR processes across separate systems can make everyday administration slow and difficult to manage.",
     solution:
@@ -40,22 +42,29 @@ export const projects = [
     summary:
       "A full-stack HR platform designed to bring essential employee and administrative processes into one system.",
   },
-  {
+ {
   title: "TutorLink",
   kicker: "Student tutoring platform",
   description:
-    "A responsive tutoring platform that helps tertiary students find verified, affordable tutors based on their course, learning preferences, availability, and budget.",
+    "A responsive tutoring website designed to help tertiary students find verified, affordable tutors based on their academic needs and learning preferences.",
   tags: ["HTML5", "CSS3", "JavaScript"],
   accent: "lime",
   code: "TL",
-  github: "https://github.com/nikitamullerr/HTML_CSS_JavaScript_Showcase.git",
-  live: "https://nikitamullerr.github.io/HTML_CSS_JavaScript_Showcase/",
+
+  github:
+    "https://lnkd.in/dHjqYgyD",
+
+  live:
+    "https://lnkd.in/dh73ySPE",
+
   problem:
-    "Tertiary students can struggle to find tutors who are affordable, trustworthy, and suited to their specific academic and learning needs.",
+    "Students often struggle to find tutors who are affordable, trustworthy, and suited to their course and individual learning preferences.",
+
   solution:
-    "TutorLink provides a responsive platform where students can explore verified tutors and filter them by course, price, availability, and learning style.",
+    "Our five-person team created TutorLink, a responsive multi-page website that lets students explore verified tutors and filter them by factors such as course, price, availability, and learning style.",
+
   summary:
-    "A collaborative front-end project focused on responsive design, JavaScript interactivity, filtering, form validation, and Git-based team development.",
+    "A collaborative front-end project built with HTML, CSS, and JavaScript. I was responsible for the Testimonials section while contributing to the team's Git-based development workflow.",
 },
 ];
 

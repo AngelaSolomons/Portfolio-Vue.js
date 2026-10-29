@@ -140,9 +140,11 @@ onBeforeUnmount(() => {
 
         <div class="about-content">
           <SectionTitle index="01" eyebrow="About me" title="Building skills through real projects" />
-          <p class="lead">I'm an early-career software developer with hands-on experience building full-stack web applications through individual and team projects.</p>
-          <p class="support">I enjoy solving problems, understanding how systems fit together, and turning ideas into functional, user-friendly applications.</p>
-          
+          <p class="lead">I'm an early-career software developer with hands-on experience building full-stack web
+            applications through individual and team projects.</p>
+          <p class="support">I enjoy solving problems, understanding how systems fit together, and turning ideas into
+            functional, user-friendly applications.</p>
+
           <div class="overview-grid">
             <!-- Card 1 -->
             <article><span>01</span>
@@ -198,7 +200,7 @@ onBeforeUnmount(() => {
       <section id="projects" data-name="Projects" class="panel projects-panel">
         <div class="projects-head">
           <SectionTitle index="03" eyebrow="Selected work" title="Projects with a point of view." />
-          <p>Three explorations across civic data, creative media, and practical cybersecurity.</p>
+          <!-- <p>Three explorations across civic data, creative media, and practical cybersecurity.</p> -->
         </div>
         <div class="project-grid">
           <button v-for="(item, index) in projects" :key="item.title" :class="`project-card ${item.accent}`"
@@ -223,7 +225,7 @@ onBeforeUnmount(() => {
       </section>
 
       <!-- CERTIFICATIONS -->
-      <section id="certifications" data-name="Certifications" class="panel certs-panel">
+      <!-- <section id="certifications" data-name="Certifications" class="panel certs-panel">
         <div class="cert-intro">
           <SectionTitle index="04" eyebrow="Credentials" title="Always learning. Always layering." />
           <p>Technical rigor meets creative fluency—an evolving collection of verified skills and multidisciplinary
@@ -242,7 +244,7 @@ onBeforeUnmount(() => {
         </div>
         <SectionControls previous="Projects" next="Contact" @back="goTo('Projects', true, 'back')"
           @next="goTo('Contact', true, 'forward')" />
-      </section>
+      </section> -->
 
       <!-- CONTACT -->
       <section id="contact" data-name="Contact" class="panel contact-panel">
@@ -335,7 +337,32 @@ onBeforeUnmount(() => {
               <p>{{ project.summary }}</p>
             </article>
           </div>
-          <div class="modal-tags"><span v-for="tag in project.tags" :key="tag">{{ tag }}</span></div>
+          <div class="modal-tags">
+            <span v-for="tag in project.tags" :key="tag">{{ tag }}</span>
+          </div>
+
+          <div class="modal-links">
+            <a 
+              v-if="project.github" 
+              :href="project.github" 
+              target="_blank" 
+              rel="noreferrer"
+              >
+                GitHub
+              <ArrowIcon diagonal />
+            </a>
+
+            <a 
+              v-if="project.live" 
+              :href="project.live" 
+              target="_blank" 
+              rel="noreferrer"
+              >
+                Live Site
+              <ArrowIcon diagonal />
+            </a>
+          </div>
+          
         </div>
       </div>
     </div>
