@@ -1,0 +1,25 @@
+ANGELA SOLOMONS
+Junior Full-Stack Software Developer & Technologist
+Cape Town, South Africa
+
+PROFILE
+Full-stack developer with a multidisciplinary background spanning software development,
+database architecture, cybersecurity, and media production. Focused on building clear,
+secure, and memorable digital products.
+
+CORE SKILLS
+Frontend: React, TypeScript, HTML, CSS, responsive user interfaces
+Backend: Node.js, Python, REST APIs, PostgreSQL
+Tools: Git, GitHub, Figma, VS Code, Adobe Creative Suite
+Knowledge: Cybersecurity, networking, data analytics, IoT
+
+CERTIFICATIONS
+Cisco — Introduction to Cybersecurity
+Cisco — Networking Basics
+Cisco — Data Analytics Essentials
+Diploma — Film & Media Production
+
+CONTACT
+Email: hello@angelasolomons.dev
+LinkedIn: linkedin.com/in/angela-solomons
+GitHub: github.com/angela-solomons
