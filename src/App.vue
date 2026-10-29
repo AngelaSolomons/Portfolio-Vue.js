@@ -45,10 +45,31 @@ function goTo(name, withTrace = false, direction) {
   }
 }
 
-function submit(event) {
-  sent.value = true
-  event.target.reset()
-  window.setTimeout(() => (sent.value = false), 4000)
+async function submit(event) {
+  const form = event.target
+
+  try {
+    const response = await fetch('https://formspree.io/f/xwlvdkbr', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: {
+        Accept: 'application/json',
+      },
+    })
+
+    if (response.ok) {
+      sent.value = true
+      form.reset()
+
+      window.setTimeout(() => {
+        sent.value = false
+      }, 4000)
+    } else {
+      alert('Something went wrong. Please try again.')
+    }
+  } catch (error) {
+    alert('Unable to send your message. Please try again.')
+  }
 }
 
 let observer
