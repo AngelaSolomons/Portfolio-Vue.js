@@ -3,7 +3,7 @@ export const sections = [
   "About",
   "Skills",
   "Projects",
-  "Certifications",
+  // "Certifications",
   "Contact",
 ];
 

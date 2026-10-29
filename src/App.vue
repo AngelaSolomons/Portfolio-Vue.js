@@ -220,8 +220,8 @@ onBeforeUnmount(() => {
             </div>
           </button>
         </div>
-        <SectionControls previous="Skills" next="Certifications" @back="goTo('Skills', true, 'back')"
-          @next="goTo('Certifications', true, 'forward')" />
+        <SectionControls previous="Skills" next="Contact" @back="goTo('Skills', true, 'back')"
+          @next="goTo('Contact', true, 'forward')" />
       </section>
 
       <!-- CERTIFICATIONS -->
@@ -286,7 +286,7 @@ onBeforeUnmount(() => {
           <small class="form-note">I usually reply within 1–2 working days.</small>
         </form>
         <footer><span>© 2026 ANGELA SOLOMONS</span></footer>
-        <SectionControls previous="Certifications" next="Home" @back="goTo('Certifications', true, 'back')"
+        <SectionControls previous="Projects" next="Home" @back="goTo('Projects', true, 'back')"
           @next="goTo('Home', true, 'forward')" />
       </section>
     </main>
@@ -362,7 +362,7 @@ onBeforeUnmount(() => {
               <ArrowIcon diagonal />
             </a>
           </div>
-          
+
         </div>
       </div>
     </div>
