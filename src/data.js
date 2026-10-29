@@ -1,61 +1,149 @@
-export const sections = ['Home', 'About', 'Skills', 'Projects', 'Certifications', 'Contact']
+export const sections = [
+  "Home",
+  "About",
+  "Skills",
+  "Projects",
+  "Certifications",
+  "Contact",
+];
 
 export const projects = [
   {
-    title: 'City Pulse',
-    kicker: 'Data experience',
-    description: 'A visual dashboard turning live urban data into clear, human stories.',
-    tags: ['React', 'Node.js', 'PostgreSQL'],
-    accent: 'lime',
-    code: 'CP',
-    problem: 'Public city data is often fragmented, dense, and difficult to interpret at a glance.',
-    solution: 'A modular API layer normalises source data while a responsive interface surfaces useful patterns and trends.',
-    summary: 'A fast, accessible dashboard that makes complex local data feel clear and actionable.',
+    title: "Lightning News",
+    kicker: "Full-stack news platform",
+    description:
+      "A full-stack news platform that collects and presents news content through an interactive interface, combining a Vue frontend with a Python/Flask backend.",
+    tags: ["Vue 3", "Flask", "Three.js"],
+    accent: "pink",
+    code: "LN",
+    liveDemo: "https://lnkd.in/dbQggjs9",
+    github: "https://lnkd.in/d3theYea",
+    problem:
+      "News content can be scattered across different sources, making it difficult to collect, organise, and explore in one place.",
+    solution:
+      "A Vue-based frontend works with a Flask backend to collect, process, and present news content through an interactive interface.",
+    summary:
+      "An interactive full-stack news platform combining modern frontend development with Python backend technologies.",
   },
   {
-    title: 'Frame / Shift',
-    kicker: 'Creative platform',
-    description: 'An editorial home for emerging filmmakers, screenings, and visual essays.',
-    tags: ['TypeScript', 'Express', 'Media'],
-    accent: 'pink',
-    code: 'FS',
-    problem: 'Independent filmmakers need an identity-led space that treats their work with editorial care.',
-    solution: 'A media-first publishing system balances cinematic visuals with practical event and creator discovery.',
-    summary: 'A bold but usable platform connecting new voices, audiences, and opportunities.',
+    title: "ModernTech",
+    kicker: "HR management system",
+    description:
+      "A full-stack HR management system built for ModernTech Solutions, with dedicated interfaces for HR administrators and employees.",
+    tags: ["Node.js", "Express", "MySQL"],
+    accent: "blue",
+    code: "MT",
+    problem:
+      "Managing employee information and HR processes across separate systems can make everyday administration slow and difficult to manage.",
+    solution:
+      "A centralised HR system provides authentication, attendance, leave, payroll, performance, time-off, issue management, and employee self-service features.",
+    summary:
+      "A full-stack HR platform designed to bring essential employee and administrative processes into one system.",
   },
   {
-    title: 'Secure Loop',
-    kicker: 'Security utility',
-    description: 'A guided cyber-hygiene toolkit for small creative teams and studios.',
-    tags: ['Python', 'Cisco', 'Automation'],
-    accent: 'blue',
-    code: 'SL',
-    problem: 'Small teams often lack dedicated security support and a repeatable risk-checking workflow.',
-    solution: 'A plain-language assessment flow generates prioritised actions and lightweight audit records.',
-    summary: 'Practical security guidance without the enterprise complexity.',
-  },
-]
+  title: "TutorLink",
+  kicker: "Student tutoring platform",
+  description:
+    "A responsive tutoring platform that helps tertiary students find verified, affordable tutors based on their course, learning preferences, availability, and budget.",
+  tags: ["HTML5", "CSS3", "JavaScript"],
+  accent: "lime",
+  code: "TL",
+  github: "https://github.com/nikitamullerr/HTML_CSS_JavaScript_Showcase.git",
+  live: "https://nikitamullerr.github.io/HTML_CSS_JavaScript_Showcase/",
+  problem:
+    "Tertiary students can struggle to find tutors who are affordable, trustworthy, and suited to their specific academic and learning needs.",
+  solution:
+    "TutorLink provides a responsive platform where students can explore verified tutors and filter them by course, price, availability, and learning style.",
+  summary:
+    "A collaborative front-end project focused on responsive design, JavaScript interactivity, filtering, form validation, and Git-based team development.",
+},
+];
 
 export const skillGroups = [
-  { title: 'Frontend', icon: '01', skills: ['React', 'TypeScript', 'HTML / CSS', 'Responsive UI'] },
-  { title: 'Backend', icon: '02', skills: ['Node.js', 'Python', 'REST APIs', 'PostgreSQL'] },
-  { title: 'Tools', icon: '03', skills: ['Git & GitHub', 'Figma', 'VS Code', 'Adobe Suite'] },
-  { title: 'Cisco', icon: '04', skills: ['Cybersecurity', 'Networking', 'Data Analytics', 'IoT'] },
-]
+  {
+    title: "Frontend",
+    icon: "01",
+    skills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Vue.js",
+      "Vite",
+    ],
+  },
+
+  {
+    title: "Backend",
+    icon: "02",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "Python",
+      "Flask",
+      "MySQL",
+    ],
+  },
+
+  {
+    title: "Tools",
+    icon: "03",
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Postman",
+    ],
+  },
+
+  {
+    title: "Additional Tools",
+    icon: "04",
+    skills: [
+      "Adobe Premiere Pro",
+      "Adobe Photoshop",
+      "Inkscape",
+      "Canva",
+    ],
+  },
+];
 
 export const certifications = [
-  { issuer: 'Cisco', title: 'Introduction to Cybersecurity', type: 'Security', year: '2024', color: 'blue' },
-  { issuer: 'Cisco', title: 'Networking Basics', type: 'Networks', year: '2024', color: 'lime' },
-  { issuer: 'Cisco', title: 'Data Analytics Essentials', type: 'Data', year: '2024', color: 'pink' },
-  { issuer: 'Film Production', title: 'Diploma in Media Production', type: 'Creative', year: '2022', color: 'orange' },
-]
+  {
+    issuer: "Cisco",
+    title: "Introduction to Cybersecurity",
+    type: "Security",
+    year: "2024",
+    color: "blue",
+  },
+  {
+    issuer: "Cisco",
+    title: "Networking Basics",
+    type: "Networks",
+    year: "2024",
+    color: "lime",
+  },
+  {
+    issuer: "Cisco",
+    title: "Data Analytics Essentials",
+    type: "Data",
+    year: "2024",
+    color: "pink",
+  },
+  {
+    issuer: "Film Production",
+    title: "Diploma in Media Production",
+    type: "Creative",
+    year: "2022",
+    color: "orange",
+  },
+];
 
 // SVG paths drawn across the screen during section transitions (one per origin section)
 export const tracerPaths = [
-  'M-40 650 C170 650 150 260 370 260 S590 690 790 510 S1030 130 1480 210',
-  'M-40 710 H190 V530 H410 V250 H650 V600 H890 V340 H1130 V150 H1480',
-  'M-40 470 C130 120 300 820 480 430 C650 70 820 790 990 410 C1140 110 1290 560 1480 260',
-  'M-40 730 L180 520 L360 650 L570 260 L770 430 L980 160 L1160 390 L1480 110',
-  'M-40 450 C170 450 160 190 360 190 H570 C760 190 680 690 890 690 H1080 C1260 690 1240 300 1480 300',
-  'M-40 180 L230 180 L390 450 L230 720 L590 720 L760 450 L590 180 L980 180 L1150 450 L980 720 L1480 720',
-]
+  "M-40 650 C170 650 150 260 370 260 S590 690 790 510 S1030 130 1480 210",
+  "M-40 710 H190 V530 H410 V250 H650 V600 H890 V340 H1130 V150 H1480",
+  "M-40 470 C130 120 300 820 480 430 C650 70 820 790 990 410 C1140 110 1290 560 1480 260",
+  "M-40 730 L180 520 L360 650 L570 260 L770 430 L980 160 L1160 390 L1480 110",
+  "M-40 450 C170 450 160 190 360 190 H570 C760 190 680 690 890 690 H1080 C1260 690 1240 300 1480 300",
+  "M-40 180 L230 180 L390 450 L230 720 L590 720 L760 450 L590 180 L980 180 L1150 450 L980 720 L1480 720",
+];
