@@ -88,7 +88,7 @@ onBeforeUnmount(() => {
     <!-- Top navigation -->
     <nav class="topbar" aria-label="Main navigation">
       <button class="brand" aria-label="Go to home" @click="goTo('Home')">
-        <span class="brand-mark"><i></i>AS</span>
+        <span class="brand-mark"><i></i>AngelaS</span>
         <span class="brand-copy"><b>Angela Solomons</b><small>Developer + Technologist</small></span>
       </button>
       <div :class="menuOpen ? 'nav-links open' : 'nav-links'">
@@ -128,7 +128,7 @@ onBeforeUnmount(() => {
       <section id="about" data-name="About" class="panel about-panel">
         <div class="about-visual">
           <div class="circuit-frame">
-            <div class="frame-label"><span>ANGELA.S</span><b>PROFILE_02</b></div>
+            <div class="frame-label"><span>ANGELA.S</span><b>PROFILE_2026</b></div>
             <CurlyPortrait variant="about" />
             <div class="frame-stats"><b>34°02′S</b><span>Cape Town</span></div>
           </div>
@@ -150,7 +150,7 @@ onBeforeUnmount(() => {
       <section id="skills" data-name="Skills" class="panel skills-panel">
         <div class="skills-top">
           <SectionTitle index="02" eyebrow="Capabilities" title="Tools I use to make ideas real." intro="A practical stack built around modern interfaces, reliable systems, and thoughtful digital production." />
-          <div class="skill-index">STACK / 2025 <i></i></div>
+          <div class="skill-index">STACK / 2026 <i></i></div>
         </div>
         <div class="skill-grid">
           <article v-for="group in skillGroups" :key="group.title" class="skill-card">
@@ -212,9 +212,11 @@ onBeforeUnmount(() => {
           <SectionTitle index="05" eyebrow="Get in touch" title="Let’s make something worth remembering." />
           <p>Message me for any queries, collaborations, or junior development opportunities. I’d love to hear what you’re building.</p>
           <div class="contact-links">
-            <a href="mailto:hello@angelasolomons.dev"><small>Email</small><b>hello@angelasolomons.dev</b><ArrowIcon diagonal /></a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><small>LinkedIn</small><b>/in/angela-solomons</b><ArrowIcon diagonal /></a>
-            <a href="https://github.com" target="_blank" rel="noreferrer"><small>GitHub</small><b>@angela-solomons</b><ArrowIcon diagonal /></a>
+            <a href="mailto:angelasolomons03@gmail.com"><small>Email</small><b>angelasolomons03@gmail.com</b><ArrowIcon diagonal /></a>
+            <a href="www.linkedin.com/in/angelasolomons
+
+" target="_blank" rel="noreferrer"><small>LinkedIn</small><b>/in/angela-solomons</b><ArrowIcon diagonal /></a>
+            <a href="https://github.com/AngelaSolomons" target="_blank" rel="noreferrer"><small>GitHub</small><b>@angela-solomons</b><ArrowIcon diagonal /></a>
           </div>
           <div class="location"><span></span><div><small>Based in</small><b>Cape Town, South Africa</b></div></div>
         </div>
@@ -229,7 +231,7 @@ onBeforeUnmount(() => {
           </button>
           <small class="form-note">I usually reply within 1–2 working days.</small>
         </form>
-        <footer><span>© 2025 ANGELA SOLOMONS</span><b>DESIGNED + BUILT WITH INTENTION</b></footer>
+        <footer><span>© 2026 ANGELA SOLOMONS</span></footer>
         <SectionControls previous="Certifications" next="Home" @back="goTo('Certifications', true, 'back')" @next="goTo('Home', true, 'forward')" />
       </section>
     </main>
