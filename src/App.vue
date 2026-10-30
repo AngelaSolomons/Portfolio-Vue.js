@@ -4,7 +4,6 @@ import { sections, projects, skillGroups, certifications, tracerPaths } from './
 import ArrowIcon from './components/ArrowIcon.vue'
 import CurlyPortrait from './components/CurlyPortrait.vue'
 import SectionTitle from './components/SectionTitle.vue'
-import SectionControls from './components/SectionControls.vue'
 
 const scroller = ref(null)
 const active = ref('Home')
@@ -108,18 +107,32 @@ onBeforeUnmount(() => {
   <div :class="shellClass">
     <!-- Top navigation -->
     <nav class="topbar" aria-label="Main navigation">
-      <button class="brand" aria-label="Go to home" @click="goTo('Home')">
-        <span class="brand-mark"><i></i>AngelaS</span>
-        <span class="brand-copy"><b>Angela Solomons</b><small>Developer + Technologist</small></span>
+      <button class="brand" aria-label="Go to home" @click="goTo('Home', true)">
+        <span class="brand-mark">
+          <i></i>AngelaS
+        </span>
+
+        <!-- <span class="brand-copy">
+          <b>Angela Solomons</b>
+          <small>Developer + Technologist</small>
+        </span> -->
       </button>
+
       <div :class="menuOpen ? 'nav-links open' : 'nav-links'">
         <button v-for="item in sections.slice(1)" :key="item" :class="{ active: active === item }"
-          @click="goTo(item)">{{ item }}</button>
+          @click="goTo(item, true)">
+          {{ item }}
+        </button>
       </div>
-      <a class="cv-button" href="/Angela-Solomons-CV.txt" download>Download CV <span>↓</span></a>
+
+      <a class="cv-button" href="/Angela-Solomons-CV.txt" download>
+        Download CV <span>↓</span>
+      </a>
+
       <button class="menu-button" :aria-expanded="menuOpen" aria-label="Toggle navigation"
         @click="menuOpen = !menuOpen">
-        <span></span><span></span>
+        <span></span>
+        <span></span>
       </button>
     </nav>
 
@@ -144,8 +157,8 @@ onBeforeUnmount(() => {
         <div class="hero-visual">
           <CurlyPortrait />
         </div>
-        <div class="scroll-hint"><span>Scroll to explore</span><i></i></div>
-        <SectionControls next="About" @next="goTo('About', true, 'forward')" />
+        <!-- <div class="scroll-hint"><span>Scroll to explore</span><i></i></div> -->
+
       </section>
 
       <!-- ABOUT -->
@@ -188,8 +201,8 @@ onBeforeUnmount(() => {
         </div>
 
 
-        <SectionControls previous="Home" next="Skills" @back="goTo('Home', true, 'back')"
-          @next="goTo('Skills', true, 'forward')" />
+
+
       </section>
 
       <!-- SKILLS -->
@@ -213,15 +226,13 @@ onBeforeUnmount(() => {
         </div>
         <!-- <div class="ticker"><span>CURIOUS BY NATURE</span><i></i><span>BUILT TO LEARN</span><i></i><span>READY TO
             COLLABORATE</span></div> -->
-        <SectionControls previous="About" next="Projects" @back="goTo('About', true, 'back')"
-          @next="goTo('Projects', true, 'forward')" />
+
       </section>
 
       <!-- PROJECTS -->
       <section id="projects" data-name="Projects" class="panel projects-panel">
         <div class="projects-head">
           <SectionTitle index="03" eyebrow="Selected work" title="Projects with a point of view." />
-          <!-- <p>Three explorations across civic data, creative media, and practical cybersecurity.</p> -->
         </div>
         <div class="project-grid">
           <button v-for="(item, index) in projects" :key="item.title" :class="`project-card ${item.accent}`"
@@ -241,8 +252,7 @@ onBeforeUnmount(() => {
             </div>
           </button>
         </div>
-        <SectionControls previous="Skills" next="Contact" @back="goTo('Skills', true, 'back')"
-          @next="goTo('Contact', true, 'forward')" />
+
       </section>
 
       <!-- CERTIFICATIONS -->
@@ -263,8 +273,7 @@ onBeforeUnmount(() => {
             <ArrowIcon diagonal />
           </article>
         </div>
-        <SectionControls previous="Projects" next="Contact" @back="goTo('Projects', true, 'back')"
-          @next="goTo('Contact', true, 'forward')" />
+        
       </section> -->
 
       <!-- CONTACT -->
@@ -278,6 +287,7 @@ onBeforeUnmount(() => {
               <ArrowIcon diagonal />
             </a>
             <a href="www.linkedin.com/in/angelasolomons
+
 
 " target="_blank" rel="noreferrer"><small>LinkedIn</small><b>/in/angela-solomons</b>
               <ArrowIcon diagonal />
@@ -307,8 +317,6 @@ onBeforeUnmount(() => {
           <small class="form-note">I usually reply within 1–2 working days.</small>
         </form>
         <footer><span>© 2026 ANGELA SOLOMONS</span></footer>
-        <SectionControls previous="Projects" next="Home" @back="goTo('Projects', true, 'back')"
-          @next="goTo('Home', true, 'forward')" />
       </section>
     </main>
 
@@ -363,23 +371,13 @@ onBeforeUnmount(() => {
           </div>
 
           <div class="modal-links">
-            <a 
-              v-if="project.github" 
-              :href="project.github" 
-              target="_blank" 
-              rel="noreferrer"
-              >
-                GitHub
+            <a v-if="project.github" :href="project.github" target="_blank" rel="noreferrer">
+              GitHub
               <ArrowIcon diagonal />
             </a>
 
-            <a 
-              v-if="project.live" 
-              :href="project.live" 
-              target="_blank" 
-              rel="noreferrer"
-              >
-                Live Site
+            <a v-if="project.live" :href="project.live" target="_blank" rel="noreferrer">
+              Live Site
               <ArrowIcon diagonal />
             </a>
           </div>
