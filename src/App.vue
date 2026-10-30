@@ -125,9 +125,9 @@ onBeforeUnmount(() => {
         </button>
       </div>
 
-      <a class="cv-button" href="/Angela-Solomons-CV.txt" download>
+      <!-- <a class="cv-button" href="/Angela-Solomons-CV.txt" download>
         Download CV <span>↓</span>
-      </a>
+      </a> -->
 
       <button class="menu-button" :aria-expanded="menuOpen" aria-label="Toggle navigation"
         @click="menuOpen = !menuOpen">
