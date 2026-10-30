@@ -16,8 +16,8 @@ export const projects = [
     tags: ["Vue 3", "Flask", "Three.js"],
     accent: "pink",
     code: "LN",
-    live: "https://lnkd.in/dbQggjs9",
-    github: "https://lnkd.in/d3theYea",
+    live: "https://lightning-news.netlify.app/",
+    github: "https://github.com/Maiesha7-7Moohan/Team-Charlie",
     problem:
       "News content can be scattered across different sources, making it difficult to collect, organise, and explore in one place.",
     solution:
@@ -52,10 +52,10 @@ export const projects = [
   code: "TL",
 
   github:
-    "https://lnkd.in/dHjqYgyD",
+    "https://github.com/nikitamullerr/HTML_CSS_JavaScript_Showcase.git",
 
   live:
-    "https://lnkd.in/dh73ySPE",
+    "https://nikitamullerr.github.io/HTML_CSS_JavaScript_Showcase/",
 
   problem:
     "Students often struggle to find tutors who are affordable, trustworthy, and suited to their course and individual learning preferences.",

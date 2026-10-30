@@ -11,7 +11,7 @@ const isHero = props.variant === 'hero'
     :aria-label="`Stylised animated portrait of Angela ${isHero ? 'coding' : 'holding a tablet'}`"
   >
     <div class="tech-float float-terminal"><b>&gt;_</b><span>terminal</span></div>
-    <div class="tech-float float-data"><b>DB</b><span>data layer</span></div>
+    <div class="tech-float float-data"><b>GIT</b><span>git commit</span></div>
     <div class="tech-float float-secure"><b>◇</b><span>secure</span></div>
     <div class="tech-float float-nodes"><i></i><i></i><i></i></div>
 

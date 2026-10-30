@@ -224,15 +224,13 @@ onBeforeUnmount(() => {
             </div>
           </article>
         </div>
-        <!-- <div class="ticker"><span>CURIOUS BY NATURE</span><i></i><span>BUILT TO LEARN</span><i></i><span>READY TO
-            COLLABORATE</span></div> -->
 
       </section>
 
       <!-- PROJECTS -->
       <section id="projects" data-name="Projects" class="panel projects-panel">
         <div class="projects-head">
-          <SectionTitle index="03" eyebrow="Selected work" title="Projects with a point of view." />
+          <SectionTitle index="03" eyebrow="Selected work" title="Projects" />
         </div>
         <div class="project-grid">
           <button v-for="(item, index) in projects" :key="item.title" :class="`project-card ${item.accent}`"
