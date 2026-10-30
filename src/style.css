@@ -985,13 +985,28 @@ p {
 }
 
 .skill-card:nth-child(4) {
-  border-top: 4px solid var(--purple)
+  border-top: 4px solid #BF00FF
 }
 
 .skill-card:hover {
   transform: translateY(-6px);
   border-color: var(--ink);
-  box-shadow: 8px 8px 0 var(--yellow)
+}
+
+.skill-card:nth-child(1):hover {
+  box-shadow: 8px 8px 0 var(--lime);
+}
+
+.skill-card:nth-child(2):hover {
+  box-shadow: 8px 8px 0 var(--blue);
+}
+
+.skill-card:nth-child(3):hover {
+  box-shadow: 8px 8px 0 var(--pink);
+}
+
+.skill-card:nth-child(4):hover {
+  box-shadow: 8px 8px 0 #BF00FF;
 }
 
 .skill-card-head {

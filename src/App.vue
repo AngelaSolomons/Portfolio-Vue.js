@@ -280,43 +280,56 @@ onBeforeUnmount(() => {
       <section id="contact" data-name="Contact" class="panel contact-panel">
         <div class="contact-copy">
           <SectionTitle index="05" eyebrow="Get in touch" title="Let’s make something worth remembering." />
-          <p>Message me for any queries, collaborations, or junior development opportunities. I’d love to hear what
-            you’re building.</p>
+
+          <p>
+            Message me for any queries, collaborations, or junior development opportunities.
+            I’d love to hear what you’re building.
+          </p>
+
           <div class="contact-links">
-            <a href="mailto:angelasolomons03@gmail.com"><small>Email</small><b>angelasolomons03@gmail.com</b>
+            <div class="contact-link">
+              <!-- <small>Email</small>
+              <b>angelasolomons03@gmail.com</b> -->
+            </div>
+
+            <a href="https://www.linkedin.com/in/angelasolomons" target="_blank" rel="noreferrer">
+              <small>LinkedIn</small>
+              <b>/in/angela-solomons</b>
               <ArrowIcon diagonal />
             </a>
-            <a href="www.linkedin.com/in/angelasolomons
 
-
-" target="_blank" rel="noreferrer"><small>LinkedIn</small><b>/in/angela-solomons</b>
-              <ArrowIcon diagonal />
-            </a>
-            <a href="https://github.com/AngelaSolomons" target="_blank"
-              rel="noreferrer"><small>GitHub</small><b>@angela-solomons</b>
+            <a href="https://github.com/AngelaSolomons" target="_blank" rel="noreferrer">
+              <small>GitHub</small>
+              <b>@angela-solomons</b>
               <ArrowIcon diagonal />
             </a>
           </div>
-          <div class="location"><span></span>
-            <div><small>Based in</small><b>Cape Town, South Africa</b></div>
+
+          <div class="location">
+            <span></span>
+            <div>
+              <small>Based in</small>
+              <b>Cape Town, South Africa</b>
+            </div>
           </div>
         </div>
-        <form class="contact-form" @submit.prevent="submit">
-          <div class="form-head"><span>START A CONVERSATION</span><b>05 — 06</b></div>
-          <label><span>Your name</span><input name="name" placeholder="How should I call you?" required /></label>
-          <label><span>Email address</span><input type="email" name="email" placeholder="you@company.com"
-              required /></label>
-          <label><span>Your message</span><textarea name="message" placeholder="Tell me a little about your idea..."
-              required></textarea></label>
-          <button class="submit-button" type="submit">
-            <template v-if="sent">Message noted — thank you</template>
-            <template v-else>Send message
-              <ArrowIcon />
-            </template>
-          </button>
-          <small class="form-note">I usually reply within 1–2 working days.</small>
-        </form>
-        <footer><span>© 2026 ANGELA SOLOMONS</span></footer>
+      <!-- </section> -->
+      <form class="contact-form" @submit.prevent="submit">
+        <div class="form-head"><span>START A CONVERSATION</span><b>05 — 06</b></div>
+        <label><span>Your name</span><input name="name" placeholder="What should I call you?" required /></label>
+        <label><span>Email address</span><input type="email" name="email" placeholder="you@company.com"
+            required /></label>
+        <label><span>Your message</span><textarea name="message" placeholder="Tell me a little about your idea..."
+            required></textarea></label>
+        <button class="submit-button" type="submit">
+          <template v-if="sent">Message noted — thank you</template>
+          <template v-else>Send message
+            <ArrowIcon />
+          </template>
+        </button>
+        <small class="form-note">I usually reply within 1–2 working days.</small>
+      </form>
+      <footer><span>© 2026 ANGELA SOLOMONS</span></footer>
       </section>
     </main>
 
